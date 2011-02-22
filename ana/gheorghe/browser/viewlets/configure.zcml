@@ -1,0 +1,38 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser">
+
+  <!-- The logo -->
+  <browser:viewlet
+    name="ana.logo"
+    manager=".interfaces.IPortalHeader"
+    class="plone.app.layout.viewlets.common.LogoViewlet"
+    permission="zope2.View"
+    />
+
+  <!-- The global sections -->
+  <browser:viewlet
+    name="ana.global_sections"
+    manager=".interfaces.IPortalHeader"
+    class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+    permission="zope2.View"
+    />
+
+  <!-- The personal bar -->
+  <!--<browser:viewlet-->
+    <!--name="ana.personal_bar"-->
+    <!--manager=".interfaces.IPortalHeader"-->
+    <!--class="plone.app.layout.viewlets.common.PersonalBarViewlet"-->
+    <!--permission="zope2.View"-->
+    <!--/>-->
+
+  <!-- Footer -->
+  <browser:viewlet
+    name="ana.footer"
+    manager=".interfaces.IPortalFooter"
+    template="footer.pt"
+    layer="ana.gheorghe.browser.interfaces.IThemeSpecific"
+    permission="zope.Public"
+    />
+
+</configure>

@@ -1,0 +1,10 @@
+<div metal:define-macro="portal_footer" i18n:domain="plone" class="row">
+  <div class="cell width-full position-0">
+  </div>
+</div>
+<div id="portal-colophon">
+  <div class="colophonWrapper">
+    <span>Copyright © 2011 - </span>
+    <a href="http://anagheorghe.com">Ana Gheorghe</a>
+  </div>
+</div>

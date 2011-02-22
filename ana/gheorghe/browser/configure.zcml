@@ -1,0 +1,46 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ana.gheorghe">
+
+  <!-- 'Ana Gheorghe' Zope 3 browser layer -->
+  <interface
+    interface=".interfaces.IThemeSpecific"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    name="Ana Gheorghe"
+    />
+
+  <browser:viewletManager
+    name="ana.portalheader"
+    provides=".viewlets.interfaces.IPortalHeader"
+    permission="zope2.View"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    />
+
+  <browser:viewletManager
+    name="ana.portalfooter"
+    provides=".viewlets.interfaces.IPortalFooter"
+    permission="zope2.View"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    />
+
+  <!-- Viewlets registration -->
+  <include package=".viewlets" />
+
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images -->
+  <browser:resourceDirectory
+    name="ana.gheorghe.images"
+    directory="images"
+    layer=".interfaces.IThemeSpecific"
+    />
+
+  <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+    name="ana.gheorghe.stylesheets"
+    directory="stylesheets"
+    layer=".interfaces.IThemeSpecific"
+    />
+
+</configure>

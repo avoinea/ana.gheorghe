@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ana.gheorghe">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Ana Gheorghe"
+      directory="profiles/default"
+      description='Extension profile for the "Ana Gheorghe" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="ana.gheorghe.various"
+      title="Ana Gheorghe: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="ana.gheorghe.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>

@@ -1,0 +1,88 @@
+body {
+  background: #e0c0cb;
+}
+
+a:link, a:visited {
+  color: #a54a69;
+}
+
+#content a:link, dl.portlet a:link {
+  color: #a54a69;
+}
+
+#portal-logo {
+  margin: 0px;
+}
+
+#portal-personaltools {
+  background-color: transparent;
+}
+
+#portal-personaltools dd {
+  background-color: transparent;
+}
+
+#visual-portal-wrapper {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+}
+
+#portal-top {
+  background: #e0c0cb;
+}
+
+#portal-top div.position-0 {
+ width: 100%;
+ margin-left: -100%;
+}
+
+#portal-globalnav {
+  background: #a54a69;
+  margin: 0px;
+}
+
+#portal-globalnav li a {
+  background: #a54a69;
+  border-right-color: #E0C0CB;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 2em;
+}
+
+#portal-globalnav .selected a, #portal-globalnav a:hover {
+  background: #ffffff;
+  color: #952c4d;
+}
+
+#portal-globalnav .selected a:hover {
+  background: #ffffff;
+  color: #952c4d;
+}
+
+#portal-breadcrumbs {
+  display: none;
+}
+
+#portal-columns {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+#portal-colophon {
+  font-size: 85%;
+  padding-bottom: 2em;
+}
+
+#portal-colophon a {
+  color: #a54a69;
+}
+
+#category a.link-category {
+  background: #E0C0CB;
+}
+
+#category a.link-category:hover {
+  background: #a54a69;
+}

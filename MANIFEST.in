@@ -1,0 +1,2 @@
+recursive-include ana *
+global-exclude *pyc
