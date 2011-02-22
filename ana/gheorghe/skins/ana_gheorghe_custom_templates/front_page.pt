@@ -20,7 +20,8 @@
     <script>
     <!--
         var flashvars = {
-            feed: "api://www.flickr.com/"
+            feed: "api://www.flickr.com/",
+            backgroundColor: 'a54a69'
         };
         var params = {
              allowFullScreen: "true",

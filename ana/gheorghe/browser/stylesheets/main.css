@@ -1,5 +1,7 @@
 body {
-  background: #e0c0cb;
+  background-color: #e0c0cb;
+  background-image: url(../bg.png);
+  background-repeat: repeat-x;
 }
 
 a:link, a:visited {
@@ -30,7 +32,9 @@ a:link, a:visited {
 }
 
 #portal-top {
-  background: #e0c0cb;
+  background-color: #e0c0cb;
+  background-image: url(../bg.png);
+  background-repeat: repeat-x;
 }
 
 #portal-top div.position-0 {
@@ -67,7 +71,7 @@ a:link, a:visited {
 
 #portal-columns {
   padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 #portal-colophon {
