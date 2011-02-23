@@ -1,15 +1,18 @@
 body {
-  background-color: #e0c0cb;
-  background-image: url(../bg.png);
+  background-color: #D9BF97;
   background-repeat: repeat-x;
 }
 
 a:link, a:visited {
-  color: #a54a69;
+  color: #733D22;
+}
+
+a:hover {
+  color: #75AD0A;
 }
 
 #content a:link, dl.portlet a:link {
-  color: #a54a69;
+  color: #733D22;
 }
 
 #portal-logo {
@@ -25,15 +28,15 @@ a:link, a:visited {
 }
 
 #visual-portal-wrapper {
-  width: 1024px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   background: #ffffff;
 }
 
 #portal-top {
-  background-color: #e0c0cb;
-  background-image: url(../bg.png);
+  background-color: #D9BF97;
+  background-image: url(../logo-bg.png);
   background-repeat: repeat-x;
 }
 
@@ -42,14 +45,26 @@ a:link, a:visited {
  margin-left: -100%;
 }
 
+/* Main sections buttons */
 #portal-globalnav {
-  background: #a54a69;
+  background: #733D22;
   margin: 0px;
+  background-image: url("../button.png");
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
+#portal-globalnav li:first-child a {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
 }
 
 #portal-globalnav li a {
-  background: #a54a69;
-  border-right-color: #E0C0CB;
+  background: #733D22;
+  background-image: url("../button.png");
+  border-right-color: #D9BF97;
   color: #ffffff;
   text-align: center;
   padding: 1em 2em;
@@ -57,21 +72,26 @@ a:link, a:visited {
 
 #portal-globalnav .selected a, #portal-globalnav a:hover {
   background: #ffffff;
-  color: #952c4d;
+  color: #733D22;
 }
 
 #portal-globalnav .selected a:hover {
   background: #ffffff;
-  color: #952c4d;
+  color: #733D22;
 }
 
 #portal-breadcrumbs {
   display: none;
 }
 
+#content a:visited {
+  color: #733D22;
+}
+
 #portal-columns {
   padding-top: 1em;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #733D22;
 }
 
 #portal-colophon {
@@ -80,13 +100,18 @@ a:link, a:visited {
 }
 
 #portal-colophon a {
-  color: #a54a69;
+  color: #733D22;
+}
+
+#portal-colophon a:hover {
+  color: #75AD0A;
 }
 
 #category a.link-category {
-  background: #E0C0CB;
+  background: #733D22;
+  color: #ffffff;
 }
 
 #category a.link-category:hover {
-  background: #a54a69;
+  background: #75AD0A;
 }
