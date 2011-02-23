@@ -43,4 +43,18 @@
     layer=".interfaces.IThemeSpecific"
     />
 
+  <browser:page
+    name="cooliris"
+    template="templates/cooliris.pt"
+    for="Products.ATContentTypes.interfaces.folder.IATBTreeFolder"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="crossdomain.xml"
+    template="templates/crossdomain.pt"
+    for="*"
+    permission="zope2.View"
+    />
+
 </configure>

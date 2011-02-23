@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+<channel>
+  <title tal:content="context/pretty_title_or_id">The title</title>
+  <link tal:content="context/portal_url">http://url.to.portal</link>
+  <description>
+    <tal:block content="context/Description">
+      Default rss description goes here
+    </tal:block>
+  </description>
+
+  <tal:block define="
+    syn context/portal_syndication;
+    objectList python:list(syn.getSyndicatableContent(context))">
+    <tal:item repeat="brain objectList">
+      <item tal:define="obj_item brain/getObject|nocall:brain;">
+        <title tal:content="obj_item/pretty_title_or_id">Picture A</title>
+        <link tal:content="obj_item/absolute_url">pl_images/A.jpg</link>
+        <media:description tal:content="obj_item/Description">
+          This one's my favorite.
+        </media:description>
+        <media:thumbnail tal:attributes="
+          url string:${obj_item/absolute_url}/image_thumb"/>
+        <media:content tal:attributes="
+          url string:${obj_item/absolute_url}/image" />
+      </item>
+    </tal:item>
+  </tal:block>
+
+</channel>
+</rss>
