@@ -6,6 +6,6 @@ except ImportError:
     from Products.Archetypes.atapi import registerType
 
 from ana.gheorghe.config import packageName
-import earings
+from ana.gheorghe.content import earings
 
 registerType(earings.ATEarings, packageName)
