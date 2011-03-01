@@ -1,14 +1,19 @@
 body {
   background-color: #D9BF97;
   background-repeat: repeat-x;
-  background-image: url(../body-bg.png);
+  background-image: url(../bg-body.png);
 }
 
 #visual-body-wrapper {
-  background-image: url(../wrap-bg.png);
+  background-image: url(../bg-wrap.png);
   background-color: transparent;
-  background-position: right top;
+  background-position: 150% top;
   background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: Arial,Helvetica,sans-serif;
 }
 
 a:link, a:visited {
@@ -36,7 +41,7 @@ a:hover {
 }
 
 #visual-portal-wrapper {
-  max-width: 1024px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   background: transparent;
@@ -48,38 +53,44 @@ a:hover {
   background-repeat: repeat-x;
 }
 
+#portal-sections-content {
+  background: url("../bg-content.png") no-repeat scroll 110px 120px transparent;
+}
+
 #portal-top div.position-0 {
  width: 100%;
- margin-left: -100%;
+ margin-left: -85%;
+}
+
+#portal-sections {
+  width: 135px;
+  float: left;
+  margin-top: 0.5em;
+}
+
+#portal-sections li {
+  display: block;
 }
 
 /* Main sections buttons */
 #portal-globalnav {
-  background: #733D22;
+  background: transparent;
   margin: 0px;
-  background-image: url("../button.png");
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-topleft: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -webkit-border-top-left-radius: 10px;
-}
-
-#portal-globalnav li:first-child a {
-  -moz-border-radius-topleft: 10px;
-  -webkit-border-top-left-radius: 10px;
 }
 
 #portal-globalnav li a {
-  background: #733D22;
+  background-color: transparent;
   background-image: url("../button.png");
-  border-right-color: #D9BF97;
-  color: #ffffff;
+  color: #733D22;
   text-align: center;
   padding: 1em 2em;
+  width: 70%;
+  margin-top: 0.5em;
 }
 
 #portal-globalnav .selected a, #portal-globalnav a:hover {
-  background: #ffffff;
+  background-color: transparent;
+  background-image: url("../button-selected.png");
   color: #733D22;
 }
 
@@ -97,16 +108,22 @@ a:hover {
 }
 
 #portal-columns {
-  padding-top: 1em;
   margin-bottom: 1em;
   border-bottom: 1px dotted #733D22;
   background-color: #ffffff;
-  min-height: 480px;
+  width: 855px;
+  min-height: 300px;
+}
+
+#portal-column-content {
+  width: 95%;
+  padding-left: 1em;
 }
 
 #portal-colophon {
   font-size: 85%;
   padding-bottom: 2em;
+  margin-left: 135px;
 }
 
 #portal-colophon a {

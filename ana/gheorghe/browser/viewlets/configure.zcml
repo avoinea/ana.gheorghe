@@ -13,7 +13,7 @@
   <!-- The global sections -->
   <browser:viewlet
     name="ana.global_sections"
-    manager=".interfaces.IPortalHeader"
+    manager=".interfaces.IPortalSections"
     class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
     permission="zope2.View"
     />

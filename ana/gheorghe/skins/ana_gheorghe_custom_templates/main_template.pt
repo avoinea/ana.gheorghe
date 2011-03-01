@@ -67,6 +67,10 @@
             <div tal:replace="structure provider:ana.portalheader" />
         </div>
         </div>
+  <div id="portal-sections-content">
+    <div id="portal-sections">
+        <div tal:replace="structure provider:ana.portalsections" />
+    </div>
     <div id="portal-columns" class="row">
 
         <div id="portal-column-content" class="cell" tal:attributes="class python:sunburst_view.getColumnsClass(view)">
@@ -167,6 +171,7 @@
         <div tal:replace="structure provider:ana.portalfooter" />
     </metal:block>
 
+</div>
 </div>
 </div>
 </body>

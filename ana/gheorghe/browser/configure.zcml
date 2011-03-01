@@ -18,6 +18,13 @@
     />
 
   <browser:viewletManager
+    name="ana.portalsections"
+    provides=".viewlets.interfaces.IPortalSections"
+    permission="zope2.View"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    />
+
+  <browser:viewletManager
     name="ana.portalfooter"
     provides=".viewlets.interfaces.IPortalFooter"
     permission="zope2.View"
