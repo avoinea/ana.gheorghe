@@ -15,6 +15,10 @@ def initialize(context):
     for atype, constructor in zip(content_types, constructors):
         if atype.portal_type == 'ATEarings':
             constructor = content.earings.addATEarings
+        elif atype.portal_type == 'ATBrooch':
+            constructor = content.brooch.addATBrooch
+        elif atype.portal_type == 'ATBracelet':
+            constructor = content.bracelet.addATBracelet
 
         utils.ContentInit("%s: %s" % (config.packageName, atype.portal_type),
             content_types = (atype,),

@@ -5,5 +5,13 @@
       <role name="Manager"/>
       <role name="Owner"/>
     </permission>
+    <permission name="ATBracelet: Add ATBracelet" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+    </permission>
+    <permission name="ATBrooch: Add ATBrooch" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+    </permission>
   </permissions>
 </rolemap>

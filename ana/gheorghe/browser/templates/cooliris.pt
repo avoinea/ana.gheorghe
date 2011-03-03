@@ -17,16 +17,17 @@
     syn context/portal_syndication;
     objectList python:list(syn.getSyndicatableContent(context))">
     <tal:item repeat="brain objectList">
-      <item tal:define="obj_item brain/getObject|nocall:brain;">
-        <title tal:content="obj_item/pretty_title_or_id">Picture A</title>
-        <link tal:content="obj_item/absolute_url">pl_images/A.jpg</link>
-        <media:description tal:content="obj_item/Description">
+      <item>
+        <title tal:content="brain/Title">Picture A</title>
+        <link tal:content="brain/getURL">pl_images/A.jpg</link>
+        <media:description
+          tal:content="python:'%s - %.2f RON' % (brain.Description, brain.getPrice)">
           This one's my favorite.
         </media:description>
         <media:thumbnail tal:attributes="
-          url string:${obj_item/absolute_url}/image_thumb"/>
+          url string:${brain/getURL}/image_thumb"/>
         <media:content tal:attributes="
-          url string:${obj_item/absolute_url}/image" />
+          url string:${brain/getURL}/image" />
       </item>
     </tal:item>
   </tal:block>

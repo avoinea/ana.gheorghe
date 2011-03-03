@@ -4,4 +4,8 @@
     meta_type="Factory-based Type Information with dynamic views"/>
  <object name="ATEarings"
     meta_type="Factory-based Type Information with dynamic views"/>
+ <object name="ATBrooch"
+    meta_type="Factory-based Type Information with dynamic views"/>
+ <object name="ATBracelet"
+    meta_type="Factory-based Type Information with dynamic views"/>
 </object>

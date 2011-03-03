@@ -2,5 +2,7 @@
 <object name="portal_factory" meta_type="Plone Factory Tool">
  <factorytypes>
   <type portal_type="ATEarings"/>
+  <type portal_type="ATBrooch"/>
+  <type portal_type="ATBracelet"/>
  </factorytypes>
 </object>
