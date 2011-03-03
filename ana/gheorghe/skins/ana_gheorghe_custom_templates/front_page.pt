@@ -23,8 +23,7 @@
     <script tal:content="string:
         var flashvars = {
             feed: '${here/portal_url}/cercei/cooliris',
-            backgroundColor: '000000',
-            backgroundImage: 'carpeta.jpg'
+            backgroundColor: 'ffffff'
         }
         var params = {
              allowFullScreen: 'true',
