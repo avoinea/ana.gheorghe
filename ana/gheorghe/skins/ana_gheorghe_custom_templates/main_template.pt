@@ -46,6 +46,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
         <meta name="generator" content="Plone - http://plone.org" />
     </tal:notajax>
+    <meta name="google-site-verification" content="K3yWDKWHYpXA4p7RGfeK5srXST993Ouye-u1jvTJ8iU" />
 </head>
 
 <body tal:define="isRTL portal_state/is_rtl;
@@ -174,6 +175,21 @@
 </div>
 </div>
 </div>
+
+<script type="text/javascript">
+<!--
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21887083-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//-->
+</script>
+
 </body>
 </html>
 
