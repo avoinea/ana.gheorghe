@@ -29,7 +29,7 @@
              allowFullScreen: 'true',
              allowscriptaccess: 'always'
         }
-        swfobject.embedSWF('http://apps.cooliris.com/embed/cooliris.swf',
+        swfobject.embedSWF('cooliris.swf',
             'wall', '100%', '400', '9.0.0', '', flashvars, params);
     "></script>
   </metal:content-core>
