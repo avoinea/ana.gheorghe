@@ -22,7 +22,7 @@
     "></script>
     <script tal:content="string:
         var flashvars = {
-            feed: '${here/portal_url}/cercei/cooliris',
+            feed: '${here/portal_url}/cooliris',
             backgroundColor: 'ffffff'
         }
         var params = {

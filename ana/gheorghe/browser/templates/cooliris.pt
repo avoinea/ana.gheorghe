@@ -13,24 +13,20 @@
     </tal:block>
   </description>
 
-  <tal:block define="
-    syn context/portal_syndication;
-    objectList python:list(syn.getSyndicatableContent(context))">
-    <tal:item repeat="brain objectList">
-      <item>
-        <title tal:content="brain/Title">Picture A</title>
-        <link tal:content="brain/getURL">pl_images/A.jpg</link>
-        <media:description
-          tal:content="python:'%s - %.2f RON' % (brain.Description, brain.getPrice)">
-          This one's my favorite.
-        </media:description>
-        <media:thumbnail tal:attributes="
-          url string:${brain/getURL}/image_thumb"/>
-        <media:content tal:attributes="
-          url string:${brain/getURL}/image" />
-      </item>
-    </tal:item>
-  </tal:block>
+  <tal:item repeat="brain python:view.children()">
+    <item>
+      <title tal:content="brain/Title">Picture A</title>
+      <link tal:content="brain/getURL">pl_images/A.jpg</link>
+      <media:description
+        tal:content="python:'%s - %.2f RON' % (brain.Description, brain.getPrice)">
+        This one's my favorite.
+      </media:description>
+      <media:thumbnail tal:attributes="
+        url string:${brain/getURL}/image_thumb"/>
+      <media:content tal:attributes="
+        url string:${brain/getURL}/image" />
+    </item>
+  </tal:item>
 
 </channel>
 </rss>

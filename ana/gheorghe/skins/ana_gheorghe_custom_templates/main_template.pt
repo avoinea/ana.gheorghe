@@ -176,6 +176,10 @@
 </div>
 </div>
 
+<tal:google define="
+  url context/absolute_url;
+  is_local python:'anagheorghe.com' not in url"
+  tal:condition="not:is_local">
 <script type="text/javascript">
 <!--
   var _gaq = _gaq || [];
@@ -189,6 +193,7 @@
   })();
 //-->
 </script>
+</tal:google>
 
 </body>
 </html>

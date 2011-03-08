@@ -53,7 +53,8 @@
   <browser:page
     name="cooliris"
     template="templates/cooliris.pt"
-    for="Products.ATContentTypes.interfaces.folder.IATBTreeFolder"
+    class=".view.Cooliris"
+    for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
     permission="zope2.View"
     />
 
