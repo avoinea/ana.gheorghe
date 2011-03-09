@@ -140,3 +140,24 @@ a:hover {
 #category a.link-category:hover {
   background: #75AD0A;
 }
+
+.photoAlbumDetails dt {
+ float: left;
+ clear: left;
+}
+
+.photoAlbumDetails dd {
+  float: left;
+  margin: 0 0 0 1em ! important;
+}
+
+.simple_overlay {
+  display:none;
+  z-index:10000;
+  min-height:200px;
+  border:1px solid #666;
+
+  /* CSS3 styling for latest browsers */
+  -moz-box-shadow:0 0 90px 5px #000;
+  -webkit-box-shadow: 0 0 90px #000;
+}
