@@ -1,1 +1,3 @@
-<tal:block replace="structure context/tag" />
+<div class="photoOverlay">
+  <tal:block replace="structure context/tag" />
+</div>

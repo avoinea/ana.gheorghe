@@ -141,6 +141,10 @@ a:hover {
   background: #75AD0A;
 }
 
+dl.photoAlbumDetails {
+  padding: 1em 0 0 2em;
+}
+
 .photoAlbumDetails dt {
  float: left;
  clear: left;
@@ -149,6 +153,14 @@ a:hover {
 .photoAlbumDetails dd {
   float: left;
   margin: 0 0 0 1em ! important;
+}
+
+.photoAlbumEntry img {
+  border: none;
+}
+
+.photoOverlay {
+  background-color: #ffffff;
 }
 
 .simple_overlay {
