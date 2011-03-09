@@ -17,7 +17,7 @@ jQuery(document).ready(function(){
   });
 
   jQuery('a.image-overlay').overlay({
-    mask: 'darkred',
+    mask: '#d9bf97',
     left: "1%",
     top: "1%",
     onBeforeLoad: function() {
@@ -43,7 +43,7 @@ jQuery(document).ready(function(){
                  kssClassesView context/@@kss_field_decorator_view;
                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
                  templateId template/getId;
-                 batch python:Batch(images, 12, int(b_start), orphan=1)">
+                 batch python:Batch(images, 10, int(b_start), orphan=1)">
 
     <div class="simple_overlay" id="overlay">
         <div class="contentWrap"></div>
@@ -71,8 +71,8 @@ jQuery(document).ready(function(){
                       <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
                     </span>
                     <dl class="photoAlbumDetails">
-                      <dt i18n:translate="">Cod:</dt><dd tal:content="image/pretty_title_or_id">Code</dd>
-                      <dt i18n:translate="">Pret:</dt><dd tal:content="python:'%.2f Lei' % image.getPrice()">Pret</dd>
+                      <dt i18n:translate="">Cod:</dt><dd tal:content="python:image.getCode() and image.getCode() or image.pretty_title_or_id()">Code</dd>
+                      <dt i18n:translate="">Pret:</dt><dd tal:content="python:'%.2f lei' % image.getPrice()">Pret</dd>
                     </dl>
                 </a>
             </div>

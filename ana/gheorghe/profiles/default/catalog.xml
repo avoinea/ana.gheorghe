@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <object name="portal_catalog" meta_type="Plone Catalog Tool">
+ <index name="getCode" meta_type="FieldIndex">
+  <indexed_attr value="getCode"/>
+ </index>
  <index name="getPrice" meta_type="FieldIndex">
   <indexed_attr value="getPrice"/>
  </index>
@@ -10,4 +13,5 @@
   <indexed_attr value="getMaterial"/>
  </index>
  <column value="getPrice"/>
+ <column value="getCode"/>
 </object>

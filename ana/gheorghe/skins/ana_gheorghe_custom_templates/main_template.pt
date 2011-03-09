@@ -46,7 +46,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
         <meta name="generator" content="Plone - http://plone.org" />
     </tal:notajax>
-    <meta name="google-site-verification" content="K3yWDKWHYpXA4p7RGfeK5srXST993Ouye-u1jvTJ8iU" />
+    <meta name="google-site-verification" content="b2z08Q1Jfgp27cwQH6Xe5aTWhlnIbUBCFNMDeJC0I0Q" />
 </head>
 
 <body tal:define="isRTL portal_state/is_rtl;

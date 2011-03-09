@@ -15,10 +15,10 @@
 
   <tal:item repeat="brain python:view.children()">
     <item>
-      <title tal:content="brain/Title">Picture A</title>
+      <title tal:content="brain/getCode">Picture A</title>
       <link tal:content="brain/getURL">pl_images/A.jpg</link>
       <media:description
-        tal:content="python:'%s - %.2f RON' % (brain.Description, brain.getPrice)">
+        tal:content="python:'%s - %.2f lei' % (brain.Description, brain.getPrice)">
         This one's my favorite.
       </media:description>
       <media:thumbnail tal:attributes="

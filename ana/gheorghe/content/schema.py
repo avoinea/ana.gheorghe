@@ -13,6 +13,15 @@ from Products.ATContentTypes import ATCTMessageFactory as _
 from Products.Archetypes import atapi
 
 AnaSchema = ATBlob.schema.copy() + atapi.Schema((
+    atapi.StringField('code', schemata='default',
+        required=True, languageIndependent=True,
+        widget=atapi.StringWidget(
+            label=_(u"label_code", default=u"Cod"),
+            description=_(u"help_code",
+                          default=(u"Cod produs (ex. 01-0014. 01: cercei, "
+                                   "02: brosa, 03: bratara)")),
+            dollars_and_cents=True,
+        )),
     atapi.FloatField('price', schemata='default',
         required=True, languageIndependent=True,
         widget=atapi.DecimalWidget(
