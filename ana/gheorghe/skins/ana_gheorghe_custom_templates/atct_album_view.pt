@@ -3,32 +3,6 @@
       metal:use-macro="here/main_template/macros/master"
       i18n:domain="plone">
 
-<metal:js fill-slot="javascript_head_slot">
-<script type="text/javascript"
-  tal:condition="context/@@plone_portal_state/anonymous">
-<!--
-jQuery(document).ready(function(){
-  jQuery('a.image-overlay').each(function(){
-    var self = jQuery(this);
-    var href = self.attr('href');
-    href = href.replace('/view', '/image_overlay');
-    self.attr('ajax', href);
-    self.attr('rel', '#overlay');
-  });
-
-  jQuery('a.image-overlay').overlay({
-    mask: '#d9bf97',
-    left: "1%",
-    top: "1%",
-    onBeforeLoad: function() {
-      var wrap = this.getOverlay().find(".contentWrap");
-      wrap.load(this.getTrigger().attr("ajax"));
-    }
-  });
-});
-//->
-</script>
-</metal:js>
 <body>
 
 <metal:content-core fill-slot="content-core">

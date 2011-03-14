@@ -4,5 +4,6 @@
   <type portal_type="ATEarings"/>
   <type portal_type="ATBrooch"/>
   <type portal_type="ATBracelet"/>
+  <type portal_type="ATHair"/>
  </factorytypes>
 </object>

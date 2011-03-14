@@ -13,5 +13,9 @@
       <role name="Manager"/>
       <role name="Owner"/>
     </permission>
+    <permission name="ATHair: Add ATHair" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+    </permission>
   </permissions>
 </rolemap>

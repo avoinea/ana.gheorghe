@@ -11,8 +11,9 @@ result = {}
 
 
 result['images'] = context.getFolderContents({
-    'portal_type': (
-        'ATEarings', 'ATBrooch', 'ATBracelet')
+    'sort_on': 'effective',
+    'sort_order': 'reverse',
+    'object_provides': 'ana.gheorghe.content.interfaces.IContent'
     }, full_objects=True)
 
 result['folders'] = ()

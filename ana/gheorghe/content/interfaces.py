@@ -1,13 +1,21 @@
 from zope.interface import Interface
 
-class IATEarings(Interface):
+class IContent(Interface):
+    """ Ana Gheorghe content
+    """
+
+class IATEarings(IContent):
     """ Marker interface for Earings content-type
     """
 
-class IATBracelet(Interface):
+class IATBracelet(IContent):
     """ Marker interface for Bracelet content-type
     """
 
-class IATBrooch(Interface):
+class IATBrooch(IContent):
     """ Marker interface for Brooch content-type
+    """
+
+class IATHair(IContent):
+    """ Marker interface for Hair content-type
     """
