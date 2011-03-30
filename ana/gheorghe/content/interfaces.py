@@ -19,3 +19,7 @@ class IATBrooch(IContent):
 class IATHair(IContent):
     """ Marker interface for Hair content-type
     """
+
+class IATNecklace(IContent):
+    """ Marker interface for Necklace content-type
+    """

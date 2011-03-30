@@ -4,18 +4,27 @@
     <permission name="ATEarings: Add ATEarings" acquire="True">
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Reviewer"/>
     </permission>
     <permission name="ATBracelet: Add ATBracelet" acquire="True">
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Reviewer"/>
     </permission>
     <permission name="ATBrooch: Add ATBrooch" acquire="True">
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Reviewer"/>
     </permission>
     <permission name="ATHair: Add ATHair" acquire="True">
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Reviewer"/>
+    </permission>
+    <permission name="ATNecklace: Add ATNecklace" acquire="True">
+      <role name="Manager"/>
+      <role name="Owner"/>
+      <role name="Reviewer"/>
     </permission>
   </permissions>
 </rolemap>

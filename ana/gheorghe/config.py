@@ -8,4 +8,5 @@ permissions = {
     'ATBracelet': 'ATBracelet: Add ATBracelet',
     'ATBrooch': 'ATBrooch: Add ATBrooch',
     'ATHair': 'ATHair: Add ATHair',
+    'ATNecklace': 'ATNecklace: Add ATNecklace',
 }

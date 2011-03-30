@@ -21,6 +21,8 @@ def initialize(context):
             constructor = content.bracelet.addATBracelet
         elif atype.portal_type == 'ATHair':
             constructor = content.hair.addATHair
+        elif atype.portal_type == 'ATNecklace':
+            constructor = content.necklace.addATNecklace
 
         utils.ContentInit("%s: %s" % (config.packageName, atype.portal_type),
             content_types = (atype,),
